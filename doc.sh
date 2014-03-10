@@ -1,2 +1,2 @@
 #!/bin/sh
-javadoc -sourcepath src/ -subpackages ch.ceilingcat.vanillatablist -d doc -public
+javadoc -sourcepath src/ -subpackages ch.ceilingcat.vanillaplayerlist -d doc -public

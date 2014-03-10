@@ -1,4 +1,4 @@
-package ch.ceilingcat.vanillatablist;
+package ch.ceilingcat.vanillaplayerlist;
 
 import org.bukkit.entity.Player;
 

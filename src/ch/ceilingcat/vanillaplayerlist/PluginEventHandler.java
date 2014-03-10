@@ -1,4 +1,4 @@
-package ch.ceilingcat.vanillatablist;
+package ch.ceilingcat.vanillaplayerlist;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

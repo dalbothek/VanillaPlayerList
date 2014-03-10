@@ -3,5 +3,5 @@ version: 1.0
 author: simon@ceilingcat.ch
 website: https://github.com/sadimusi/VanillaPlayerList
 
-main: ch.ceilingcat.vanillatablist.VanillaPlayerList
+main: ch.ceilingcat.vanillaplayerlist.VanillaPlayerList
 depend: [TabAPI, ProtocolLib]
