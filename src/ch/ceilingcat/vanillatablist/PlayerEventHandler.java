@@ -5,7 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-public class PlayerEventHandler implements Listener {
+class PlayerEventHandler implements Listener {
     private final VanillaPlayerList plugin;
 
     public PlayerEventHandler(VanillaPlayerList plugin) {

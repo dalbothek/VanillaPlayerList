@@ -4,7 +4,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.PluginDisableEvent;
 
-public class PluginEventHandler implements Listener {
+class PluginEventHandler implements Listener {
     private final ListenerManager manager;
 
     public PluginEventHandler(ListenerManager manager) {

@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.bukkit.plugin.Plugin;
 
-public class ListenerManager {
+class ListenerManager {
     private final List<VanillaPlayerListListener> listeners = new ArrayList<>();
 
     public ListenerManager(VanillaPlayerList plugin) {

@@ -2,6 +2,7 @@ bin
 dist
 release
 ant-bin
+doc
 .externalToolBuilders
 
 .DS_Store

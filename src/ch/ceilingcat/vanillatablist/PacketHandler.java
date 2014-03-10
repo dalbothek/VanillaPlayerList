@@ -10,7 +10,7 @@ import com.comphenix.protocol.events.ListenerPriority;
 import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketEvent;
 
-public class PacketHandler extends PacketAdapter {
+class PacketHandler extends PacketAdapter {
     private final VanillaPlayerList plugin;
 
     private final Map<Player, PingRequest> requests = new HashMap<>();
