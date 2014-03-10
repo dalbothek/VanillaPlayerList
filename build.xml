@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="build" name="Build VanillaTabList.jar">
+    <property name="name" value="VanillaPlayerList"/>
+	
+	<property name="src" location="src"/>
+    <property name="lib" location="lib"/>
+	<property name="bin" location="bin-ant"/>
+	<property name="dist" location="dist"/>
+	
+	<property name="build.sysclasspath" value="last" />
+
+	<path id="project-classpath">
+		<fileset dir="${lib}" includes="*.jar" />
+	</path>
+
+	<target name="clean release">
+		<delete dir="${dist}" />
+	</target>
+
+	<target name="clean build">
+		<delete dir="${bin}" />
+	</target>
+
+	<target name="compile" depends="clean build">
+		<mkdir dir="${bin}" />
+		<javac srcdir="src" destdir="${bin}" debug="on" target="1.7" source="1.7">
+			<classpath refid="project-classpath" />
+			<compilerarg value="-Xlint:none" />
+		</javac>
+	</target>
+
+	<target name="build" depends="clean release, compile">
+		<mkdir dir="${dist}" />
+		<jar destfile="${dist}/${name}.jar">
+			<manifest>
+				<attribute name="Class-Path" value="." />
+			</manifest>
+
+			<fileset dir="${bin}" />
+			<fileset file="plugin.yml"/>
+		</jar>
+		<antcall target="clean build" />
+	</target>
+	
+	<target name="deploy" depends="build">
+		<copy file="${dist}/${name}.jar" todir="${deploy-dir}"/>
+	</target>
+</project>

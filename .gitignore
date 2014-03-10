@@ -1,0 +1,7 @@
+bin
+dist
+release
+ant-bin
+.externalToolBuilders
+
+.DS_Store
